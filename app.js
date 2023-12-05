@@ -54,7 +54,7 @@ function plotMohrCircle() {
     for (var i = 0; i <= 360; i++) {
         var theta = i * Math.PI / 180;
         var xPoint = center[0] + radius * Math.cos(theta);
-        var yPoint = center[1] + radius * Math.sin(theta);
+        var yPoint = center[1] - radius * Math.sin(theta);
         data[1].x.push(xPoint);
         data[1].y.push(yPoint);
     }
